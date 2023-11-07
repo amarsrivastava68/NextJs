@@ -9,7 +9,7 @@ const developer = () => {
   ];
 
   const router = useRouter();
-  const developer_id = parseInt(router.query.developer); // Convert to a number
+  const developer_id = Number(router.query.developer); // Convert to a number
 
   // Find the developer with the matching ID
   const req_developer = details.find((dev) => dev.id === developer_id);
